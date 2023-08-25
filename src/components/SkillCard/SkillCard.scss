@@ -1,0 +1,35 @@
+@import '../../scss/mixins';
+@import '../../scss/resets';
+@import '../../scss/variables';
+
+.skill-card{
+    width: 150px;
+    height: 150px;
+    padding: 5px;
+    box-shadow: rgba(0, 0, 0, 0.5) 1.95px 1.95px 2.6px;
+    margin: 0.5rem;
+    // border-right: 1px solid $secondary;
+    // border-bottom: 1px solid $secondary;
+    border-left: 2px solid $color-accent;
+    background-color: #242424;
+    
+    h3{
+        font-family: $font-secondary;
+        font-size: 1rem;
+    }
+
+    img{
+        height: 64px;
+        width: 64px;
+        object-fit: cover;
+    }
+
+}
+
+@media screen and (min-width: 250px) and (max-width: 399px){
+    .skill-card{
+        width: 125px;
+        height: 150px;
+        padding: 5px;
+    }
+}

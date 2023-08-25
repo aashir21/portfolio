@@ -1,0 +1,52 @@
+@import '../../scss/mixins';
+@import '../../scss/resets';
+@import '../../scss/variables';
+
+.exp-card{
+    height: auto;
+    width: 100%;
+    margin: 2rem auto;
+    background-color: #242424;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.job-title{
+    @include flex(center,flex-start);
+    flex-direction: column;
+
+    h1{
+        font-family: $font-secondary;
+        color: $color-primary;
+        font-size: 1.75rem;
+        text-transform: uppercase;
+        margin: 1rem 0;
+    }
+
+    img{
+        width: 128px;
+        object-fit: contain;
+    }
+
+}
+
+.job-desc{
+    width: 100%;
+    text-align: left;
+    
+    h1{
+        margin: 1rem 0;
+        font-family: $font-secondary;
+        color: $color-primary;
+        font-size: 1.2rem;
+        font-weight: 300;
+    }
+}
+
+@media screen and (min-width: 250px) and (max-width: 768px) {
+    .job-desc{
+        h1{
+            font-size: 1.125rem;
+        }
+    }
+}

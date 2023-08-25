@@ -1,0 +1,37 @@
+@import '../../scss/mixins';
+@import '../../scss/resets';
+@import '../../scss/variables';
+
+
+.retro{
+    font-family: $font-secondary;
+    font-weight: 700;
+    text-transform: uppercase;
+    align-items: center;
+    background-color: white;
+    color: $primary;
+    padding: 0.75rem 1rem;
+    margin: 0 1rem 0 0;
+    border-radius: 0.25rem;
+    border: solid 0.125rem #121212;
+    box-shadow: 0.25rem 0.25rem #121212;
+    transition: transform 50ms, box-shadow 50ms;
+}
+
+
+.retro:active{
+    transform: translate(0.125rem, 0.125rem);
+    box-shadow: 0.125rem 0.125rem #8739f9;
+}
+
+@media screen and (min-width: 400px) and (max-width: 768px) {
+    .retro{
+        font-size: 0.675rem;
+    }
+}
+
+@media screen and (min-width: 250px) and (max-width: 399px) {
+    .retro{
+        font-size: 0.625rem;
+    }
+}

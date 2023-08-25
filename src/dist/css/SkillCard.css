@@ -1,0 +1,36 @@
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.skill-card {
+  width: 150px;
+  height: 150px;
+  padding: 5px;
+  box-shadow: rgba(0, 0, 0, 0.5) 1.95px 1.95px 2.6px;
+  margin: 0.5rem;
+  border-left: 2px solid #c651cd;
+  background-color: #242424;
+}
+.skill-card h3 {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 1rem;
+}
+.skill-card img {
+  height: 64px;
+  width: 64px;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 250px) and (max-width: 399px) {
+  .skill-card {
+    width: 125px;
+    height: 150px;
+    padding: 5px;
+  }
+}

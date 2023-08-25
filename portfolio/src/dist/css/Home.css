@@ -1,0 +1,443 @@
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #1a1a1a;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.hero-section {
+  width: 85%;
+  margin: 0 auto;
+  height: 90vh;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1920' height='1080' preserveAspectRatio='none' viewBox='0 0 1920 1080'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1021%26quot%3b)' fill='none'%3e%3crect width='1920' height='1080' x='0' y='0' fill='rgba(26%2c 26%2c 26%2c 1)'%3e%3c/rect%3e%3cpath d='M113 544L112 231' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1022%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M1709 372L1708 93' stroke-width='10' stroke='url(%26quot%3b%23SvgjsLinearGradient1023%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M603 634L602 175' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1023%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M1895 977L1894 1760' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1022%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M716 984L715 1518' stroke-width='10' stroke='url(%26quot%3b%23SvgjsLinearGradient1022%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M529 681L528 -58' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1023%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M200 897L199 1270' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1022%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M96 655L95 -150' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1023%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M1785 337L1784 730' stroke-width='10' stroke='url(%26quot%3b%23SvgjsLinearGradient1022%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M1618 653L1617 1157' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1022%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M554 359L553 1008' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1022%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M1006 266L1005 592' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1023%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M510 138L509 -273' stroke-width='10' stroke='url(%26quot%3b%23SvgjsLinearGradient1022%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M1798 171L1797 -500' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1022%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M992 853L991 268' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1023%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M267 877L266 1199' stroke-width='10' stroke='url(%26quot%3b%23SvgjsLinearGradient1023%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M781 746L780 72' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1023%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M1186 334L1185 1099' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1023%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M1425 797L1424 388' stroke-width='10' stroke='url(%26quot%3b%23SvgjsLinearGradient1023%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M1468 702L1467 247' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1023%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M660 822L659 71' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1022%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M1483 203L1482 -606' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1023%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M546 616L545 1299' stroke-width='10' stroke='url(%26quot%3b%23SvgjsLinearGradient1023%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M1186 1048L1185 580' stroke-width='10' stroke='url(%26quot%3b%23SvgjsLinearGradient1023%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M1603 854L1602 479' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1022%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M280 213L279 980' stroke-width='10' stroke='url(%26quot%3b%23SvgjsLinearGradient1022%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M45 110L44 -310' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1023%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M39 619L38 202' stroke-width='10' stroke='url(%26quot%3b%23SvgjsLinearGradient1022%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M545 305L544 599' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1023%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M903 375L902 -49' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1022%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M1613 121L1612 438' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1023%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M1814 318L1813 -34' stroke-width='10' stroke='url(%26quot%3b%23SvgjsLinearGradient1023%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M812 349L811 -424' stroke-width='10' stroke='url(%26quot%3b%23SvgjsLinearGradient1022%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M401 768L400 1265' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1023%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M235 336L234 941' stroke-width='10' stroke='url(%26quot%3b%23SvgjsLinearGradient1022%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M541 183L540 -596' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1023%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M1485 464L1484 1' stroke-width='10' stroke='url(%26quot%3b%23SvgjsLinearGradient1023%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M1810 200L1809 -294' stroke-width='10' stroke='url(%26quot%3b%23SvgjsLinearGradient1022%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M547 242L546 577' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1022%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M1070 86L1069 388' stroke-width='10' stroke='url(%26quot%3b%23SvgjsLinearGradient1022%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M1336 825L1335 1191' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1023%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M365 880L364 1253' stroke-width='10' stroke='url(%26quot%3b%23SvgjsLinearGradient1023%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M1548 374L1547 -434' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1022%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M957 914L956 491' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1022%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M921 845L920 65' stroke-width='10' stroke='url(%26quot%3b%23SvgjsLinearGradient1023%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M131 593L130 -127' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1023%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M222 348L221 886' stroke-width='10' stroke='url(%26quot%3b%23SvgjsLinearGradient1023%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M1682 680L1681 1339' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1022%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1021'%3e%3crect width='1920' height='1080' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='0%25' y1='0%25' x2='0%25' y2='100%25' id='SvgjsLinearGradient1022'%3e%3cstop stop-color='rgba(135%2c 57%2c 249%2c 0)' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(135%2c 57%2c 249%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='0%25' y1='100%25' x2='0%25' y2='0%25' id='SvgjsLinearGradient1023'%3e%3cstop stop-color='rgba(135%2c 57%2c 249%2c 0)' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(135%2c 57%2c 249%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+  background-repeat: repeat-x;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-container {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title {
+  color: white;
+  font-family: "Unbounded", cursive;
+  font-size: 3rem;
+}
+
+.sub-title {
+  font-family: "IBM Plex Mono", monospace;
+  color: #c651cd;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  text-shadow: 3px 3px 10px rgb(0, 0, 0);
+}
+
+.avatar-con {
+  clip-path: circle(50% at 50% 50%);
+  background-image: linear-gradient(to right bottom, #8739f9, #9e3bed, #b041e1, #bc48d7, #c651cd);
+}
+
+.avatar {
+  width: 350px;
+  height: 350px;
+  filter: drop-shadow(8px 8px 15px rgba(0, 0, 0, 0.5));
+}
+
+.hero-svg {
+  width: 64px;
+  height: 64px;
+  margin: 1rem;
+}
+
+.about-me {
+  width: 100%;
+  min-height: 50vh;
+  margin: 5rem 0 3rem 0;
+}
+
+.about-me-con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  text-align: left;
+  margin: 2rem auto;
+}
+
+.about-txt-holder {
+  width: 85%;
+  height: auto;
+  margin: 0 auto;
+}
+.about-txt-holder h1 {
+  font-family: "Unbounded", cursive;
+  font-size: 2rem;
+  color: #c651cd;
+  margin: 1rem 0;
+}
+.about-txt-holder p {
+  font-family: "IBM Plex Mono", monospace;
+  color: white;
+  text-shadow: 3px 3px 10px rgb(0, 0, 0);
+  margin: 0.75rem 0;
+  font-size: 18px;
+  font-weight: 300;
+}
+.about-txt-holder .me-tag {
+  font-size: 1.25em;
+}
+
+.skills-section {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.section-title {
+  font-family: "Unbounded", cursive;
+  font-size: 2rem;
+  text-align: left;
+  width: 85%;
+  margin: 0 auto;
+  color: #c651cd;
+}
+
+.skills-con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.frontend-skills {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  min-height: 33%;
+  flex-wrap: wrap;
+  width: 85%;
+  margin: 0 auto;
+  flex-direction: column;
+}
+.frontend-skills h3 {
+  margin: 1rem 0;
+  color: white;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 1.75rem;
+}
+
+.svg-holder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.project-section {
+  width: 100%;
+  height: 100vh;
+  margin: 5rem 0;
+}
+
+.project-con {
+  width: 85%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+}
+
+.project-img {
+  width: 50%;
+  height: 80%;
+  background-color: #242424;
+  display: flex;
+  justify-content: center;
+  align-items: space-between;
+  flex-direction: column;
+}
+.project-img img {
+  margin: 1rem auto;
+  width: 80%;
+  height: 75%;
+  object-fit: contain;
+  position: relative;
+}
+.project-img .next-btn-holder {
+  width: 100%;
+  height: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-title {
+  text-align: left;
+  font-size: 2rem;
+  font-family: "Unbounded", cursive;
+  color: white;
+  align-self: flex-start;
+}
+
+.project-description {
+  width: 50%;
+  height: 80%;
+  background-color: #242424;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.desc {
+  text-align: left;
+  list-style: none;
+}
+.desc li {
+  margin: 2rem 0;
+  font-family: "IBM Plex Mono", monospace;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+.status {
+  text-align: left;
+  font-size: 1rem;
+  font-family: "IBM Plex Mono", monospace;
+  align-self: flex-start;
+  color: #ffd900;
+}
+
+.btn-holder {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.experience-section {
+  width: 100%;
+  min-height: 100vh;
+  margin: 2rem 0;
+}
+
+.experience-con {
+  height: 100%;
+  width: 85%;
+  margin: 5rem auto;
+}
+
+.contact-section {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1005%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(26%2c 26%2c 26%2c 1)'%3e%3c/rect%3e%3cpath d='M -66.6318332880902%2c125 C 29.37%2c167.8 221.37%2c334.8 413.3681667119098%2c339 C 605.37%2c343.2 701.37%2c137.6 893.3681667119098%2c146 C 1085.37%2c154.4 1181.37%2c394.6 1373.36816671191%2c381 C 1565.37%2c367.4 1840.04%2c88.8 1853.36816671191%2c78 C 1866.69%2c67.2 1522.67%2c277.2 1440%2c327' stroke='rgba(135%2c 57%2c 249%2c 0.75)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -93.17949521268571%2c79 C 2.82%2c124.2 194.82%2c289.4 386.8205047873143%2c305 C 578.82%2c320.6 674.82%2c140.6 866.8205047873143%2c157 C 1058.82%2c173.4 1154.82%2c393.2 1346.8205047873143%2c387 C 1538.82%2c380.8 1808.18%2c111.8 1826.8205047873143%2c126 C 1845.46%2c140.2 1517.36%2c391.6 1440%2c458' stroke='rgba(135%2c 57%2c 249%2c 0.75)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -777.1780748563717%2c148 C -681.18%2c219 -489.18%2c497 -297.17807485637167%2c503 C -105.18%2c509 -9.18%2c183.8 182.82192514362833%2c178 C 374.82%2c172.2 470.82%2c486 662.8219251436283%2c474 C 854.82%2c462 987.39%2c145.2 1142.8219251436283%2c118 C 1298.26%2c90.8 1380.56%2c294 1440%2c338' stroke='rgba(135%2c 57%2c 249%2c 0.75)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -49.31865489465474%2c412 C 46.68%2c349.2 238.68%2c107 430.68134510534526%2c98 C 622.68%2c89 718.68%2c355.8 910.6813451053453%2c367 C 1102.68%2c378.2 1198.68%2c141 1390.6813451053454%2c154 C 1582.68%2c167 1860.82%2c451.6 1870.6813451053454%2c432 C 1880.55%2c412.4 1526.14%2c131.2 1440%2c56' stroke='rgba(135%2c 57%2c 249%2c 0.75)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1005'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+}
+
+.contact-con {
+  width: 85%;
+  height: 100%;
+  margin: 5rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contact-con h1 {
+  font-size: 5rem;
+  font-family: "IBM Plex Mono", monospace;
+  color: white;
+  margin: 1rem 0;
+}
+.contact-con img {
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  margin: 1rem 0;
+}
+
+@media screen and (min-width: 769px) and (max-width: 920px) {
+  .about-txt-holder {
+    width: 90%;
+    height: 100%;
+  }
+  .svg-holder {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .project-section {
+    height: auto;
+  }
+  .project-con {
+    width: 90%;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .project-description {
+    width: 100%;
+  }
+  .project-description .point {
+    font-size: 1.125rem;
+  }
+  .project-img {
+    width: 100%;
+    margin: 2rem 0;
+  }
+  .project-img img {
+    height: 100%;
+  }
+  .project-img .next-btn-holder {
+    height: 25%;
+  }
+  .project-img .next-btn-holder {
+    margin: 2rem 0;
+  }
+  .btn-holder {
+    margin: 2rem 0;
+  }
+}
+@media screen and (min-width: 400px) and (max-width: 768px) {
+  .about-txt-holder {
+    width: 90%;
+    height: 100%;
+  }
+  .svg-holder {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .project-section {
+    height: auto;
+  }
+  .project-con {
+    width: 90%;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .project-description {
+    width: 100%;
+  }
+  .project-description .point {
+    font-size: 1.125rem;
+  }
+  .project-img {
+    width: 100%;
+    margin: 2rem 0;
+  }
+  .project-img img {
+    height: 65%;
+  }
+  .project-img .next-btn-holder {
+    height: 25%;
+    margin: 2rem 0;
+  }
+  .btn-holder {
+    margin: 2rem 0;
+  }
+  .contact-section {
+    min-height: 100vh;
+  }
+  .contact-con h1 {
+    margin: 1rem 0;
+    font-size: 3.5rem;
+  }
+  .section-title {
+    font-size: 1.75rem;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 399px) {
+  .title {
+    font-size: 2rem;
+  }
+  .section-title {
+    font-size: 1.75rem;
+  }
+  .sub-title {
+    font-size: 1.25rem;
+  }
+  .avatar {
+    height: 275px;
+    width: 275px;
+  }
+  .about-me {
+    min-height: 100vh;
+  }
+  .about-txt-holder {
+    width: 90%;
+    height: 100%;
+  }
+  .svg-holder {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .project-section {
+    height: auto;
+  }
+  .project-con {
+    width: 90%;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .project-description {
+    width: 100%;
+  }
+  .project-description .point {
+    font-size: 1rem;
+  }
+  .project-img {
+    width: 100%;
+    margin: 2rem 0;
+  }
+  .project-img img {
+    height: 100%;
+  }
+  .project-img .next-btn-holder {
+    height: 25%;
+  }
+  .project-img .next-btn-holder {
+    margin: 2rem 0;
+  }
+  .btn-holder {
+    margin: 2rem 0;
+  }
+  .contact-con h1 {
+    margin: 1rem 0;
+    font-size: 3rem;
+  }
+}
